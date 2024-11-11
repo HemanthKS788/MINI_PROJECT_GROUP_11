@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotating CAPTCHA</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <div id="captcha-container">
+        <div class="header">
+            <h2>Verify Weather You are a Human</h2>
+            <h3>Rotate the object in the direction of the hand</h3>
+
+        </div>
+        <div class="captcha">
+
+            <div class="refrence">
+                <img class="refrenceimg" src="Images/handimg.png">
+            </div>
+            <div class="slider">
+                <img class="slide" src="Images/image1.png" alt="Image 1">
+                <img class="slide" src="Images/image2.png"  alt="Image 2">
+                <img class="slide" src="Images/image1.png"  alt="Image 3">
+                <ul>
+
+                    <button class="prev" onclick="changeSlide(-1)"><img class="arrowimg" style="width: 30px;height:30px" src="Images/leftarrow.png"></button>
+                    <p>...........................</p>
+                    <button class="next" onclick="changeSlide(1)"><img class="arrowimg" style="width: 30px;height:30px" src="Images/rightarrow.png"></button>
+
+                </ul>
+                
+            </div>
+
+        </div>
+        <div class="footer">
+             <button> Verify </button>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
